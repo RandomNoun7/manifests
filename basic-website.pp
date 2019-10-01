@@ -12,7 +12,6 @@ iis_site { 'minimal':
   physicalpath    => 'c:\\inetpub\\minimal',
   applicationpool => 'DefaultAppPool',
   require         => [
-    File['minimal'],
     File['minimal-index'],
     Iis_site['Default Web Site']
   ],
